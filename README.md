@@ -2,25 +2,27 @@
 
 # CRUD Application Using Code First Approach in ASP.NET Core 6
 
-This project demonstrates a basic CRUD (Create, Read, Update, Delete) application using the Code First approach with Entity Framework Core in ASP.NET Core 6. The application manages a simple entity: Product.
+This project demonstrates a basic CRUD (Create, Read, Update, Delete) application using the Code First approach with Entity Framework Core in ASP.NET Core 6. 
 
-Features : 
+# Features : 
 
-Create new products
+1. Create 
 
-Read and list all products
+2. Read and list 
 
-Update existing products
+3. Update 
 
-Delete products
+5. Delete
 
-Prerequisites :
+6. Data Visualization
 
-.NET 6 SDK
+# Prerequisites :
 
-Visual Studio 2022 or any other preferred IDE
+1. .NET 6 SDK
 
-SQL Server
+2. Visual Studio 2022 or any other preferred IDE
+
+3. SQL Server
 
 
 1. Clone the Repository
