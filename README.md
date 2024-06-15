@@ -28,23 +28,29 @@ This project demonstrates a basic CRUD (Create, Read, Update, Delete) applicatio
 1. Clone the Repository
 
 git clone https://github.com/yourusername/CrudAppCodeFirst.git
+
 cd CrudAppCodeFirst
 
 2. Set Up the Database
+3. 
 Update the connection string in appsettings.json to match your SQL Server configuration:
 
 "ConnectionStrings": {
+
   "DefaultConnection": "Server=your_server_name;Database=CrudAppDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
 
 3. Apply Migrations
+4. 
 Run the following commands in the Package Manager Console or via CLI to create the database and apply the migrations:
 
 dotnet ef migrations add InitialCreate
+
 dotnet ef database update
 
 
 4. Run the Application
+   
 Use the following command to run the application:
 
 dotnet run
