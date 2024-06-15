@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h3>Barc hart</h3>
+        <canvas id="barchart" width="200" height="110" style="width:197px;height:110px"></canvas>
+    </div>
+    <div class="col-6">
+        <h3>Line hart</h3>
+        <canvas id="linechart" width="200" height="110" style="width:197px;height:110px"></canvas>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetTradeData",
+            data: "",
+            contentType: "application/json; charset=utf-8", // corrected spelling to `contentType`
+            dataType: "json",
+            success: OnSuccess,
+        });
+
+        function OnSuccess(data) {
+            const barChart = document.getElementById('barchart');
+            const lineChart = document.getElementById('linechart');
+            var _data = data;
+            var _labels = _data[0];
+            var _ChartData = _data[1];
+            var colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+            new Chart(barChart, {
+                type: 'bar',
+                data: {
+                    labels: _labels,
+                    datasets: [{
+                        backgroundColor: colors,
+                        data: _ChartData,
+                        borderWidth: 1,
+                    }]
+                }
+            });
+            new Chart(lineChart, {
+                type: 'line',
+                data: {
+                    labels: _labels,
+                    datasets: [{
+                        backgroundColor: colors,
+                        data: _ChartData,
+                        borderWidth: 1,
+                    }]
+                }
+            });
+        }
+    });
+</script>
+
