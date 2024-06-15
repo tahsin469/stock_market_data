@@ -48,3 +48,18 @@ dotnet ef database update
 Use the following command to run the application:
 
 dotnet run
+
+![Screenshot (11620)](https://github.com/tahsin469/stock_market_data/assets/76706081/efa2b06e-4c12-4256-bcfc-f8eb337327aa)
+![Screenshot (11621)](https://github.com/tahsin469/stock_market_data/assets/76706081/bd4c0f30-23e9-4e4f-9786-125715693c94)
+![Screenshot (11622)](https://github.com/tahsin469/stock_market_data/assets/76706081/6bca1057-fa40-4113-90ca-f0f4397556e6)
+![Screenshot (11623)](https://github.com/tahsin469/stock_market_data/assets/76706081/7e62dfed-d865-46af-a5d4-8517ff90ec14)
+![Screenshot (11624)](https://github.com/tahsin469/stock_market_data/assets/76706081/c929f9d7-fa4f-48ef-8d6c-94b39a1dad4e)
+![Screenshot (11625)](https://github.com/tahsin469/stock_market_data/assets/76706081/8e2e5a05-83fa-478c-aa6b-4d72bc6117e6)
+
+
+
+
+
+
+
+
